@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Text counter</title>
+</head>
+<body>
+    <div id="pd">
+        <h1 id="1h">Enter Text</h1>
+        <input id="i1" type="text"><br>
+        <br>
+        <button onclick="cc()" id="b1">Count Words</button>
+        <button onclick="cw()" id="b2">Count Charecters</button>
+        <button onclick="cu()" id="b3">Upercase</button>
+        <button onclick="cl()" id="b4">Lowercase</button>
+        <h1 id="output">None</h1>
+        <br>
+        <br>
+    </div>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        #pd{
+            border: 5px double aqua;
+            width: 70%;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #d1{
+            opacity: 0;
+        }
+        #b1{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        #b2{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        #b3{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        #b4{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        #i1{
+            border: 5px double aqua;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        #bi{
+            border: 5px double aqua;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            margin: 5px;
+        }
+        #ri{
+            border: 5px double aqua;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            margin: 5px;
+        }
+        #gi{
+            border: 5px double aqua;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            margin: 5px;
+        }
+    </style>
+
+
+<script>
+    function cc(){
+        var i = document.getElementById("i1").value 
+        document.getElementById("output").innerHTML = i.length
+    }
+    function cw(){
+        var a = document.getElementById("i1").value 
+        document.getElementById("output").innerHTML = a.split(" ").length
+    }
+    function cu(){
+        var b = document.getElementById("i1").value 
+        document.getElementById("output").innerHTML = b.toUpperCase()
+    }
+    function cl(){
+        var b = document.getElementById("i1").value 
+        document.getElementById("output").innerHTML = b.toLowerCase()
+    }
+</script>
+</body>
+</html>
